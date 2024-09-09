@@ -1,0 +1,7 @@
+{
+  "name": "todos-ionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
