@@ -1,0 +1,31 @@
+<ion-content class="ion-padding">
+  <div class="login-container">
+    <h1 class="logo">PlantFlow Logo Here</h1>
+    <form [formGroup]="registerForm" (ngSubmit)="register()">
+      <ion-item>
+        <ion-input type="text" placeholder="Name" formControlName="name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="email" placeholder="Email" formControlName="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="password" placeholder="Password" formControlName="password"></ion-input>
+      </ion-item>
+      <div class="social-icons">
+        <ion-button fill="clear">
+          <ion-icon name="logo-google">
+            <img src="https://banner2.cleanpng.com/20180423/gkw/avesbl6oq.webp">
+          </ion-icon>
+        </ion-button>
+        <ion-button fill="clear">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </ion-button>
+        <ion-button fill="clear">
+          <ion-icon name="logo-apple"></ion-icon>
+        </ion-button>
+      </div>
+      <ion-button expand="block" type="submit">Sign Up</ion-button>
+      <ion-button expand="block" fill="clear" (click)="login()">Login</ion-button>
+    </form>
+  </div>
+</ion-content>
